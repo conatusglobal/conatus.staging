@@ -754,7 +754,7 @@ Start Call To Action
 				
 				<!-- Contact Form -->
 				<div class="contact-form col-md-6 ">
-					<form id="contact-form" method="post" role="form">
+					<form id="contact-form" method="POST" data-netlify="true">
 						<div class="form-group mb-4">
 							<input type="text" placeholder="Your Name" class="form-control" name="name" id="name"
 								required>
@@ -773,6 +773,9 @@ Start Call To Action
 						<div class="form-group mb-4">
 							<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"
 								required></textarea>
+						</div>
+						<div class="field">
+							<div data-netlify-recaptcha="true"></div>
 						</div>
 						<div id="cf-submit">
 							<input type="submit" onclick="myFunction()" id="contact-submit" class="btn btn-transparent" value="submit" >
